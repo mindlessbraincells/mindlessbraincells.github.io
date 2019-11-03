@@ -1,0 +1,45 @@
+{
+  "name": "mindlessbraincells.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:watch": "parcel watch src/index.pug",
+    "dev:run": "parcel src/index.pug",
+    "prod:build": "parcel build src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindlessbraincells/mindlessbraincells.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindlessbraincells/mindlessbraincells.github.io/issues"
+  },
+  "homepage": "https://github.com/mindlessbraincells/mindlessbraincells.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@emotion/core": "^10.0.22",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.23.3"
+  },
+  "dependencies": {
+    "baffle": "^0.3.6",
+    "history": "^4.10.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.1.2",
+    "use-query-params": "^0.4.3"
+  }
+}
