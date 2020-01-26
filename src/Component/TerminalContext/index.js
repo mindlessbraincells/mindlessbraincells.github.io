@@ -14,12 +14,16 @@ export function TerminalContextProvider(props) {
   const executeCommand = (args) => {
     args = args.split(" ");
 
+    if (["clear", "clrscr", "cls"].includes(args[0])) {
+      return setTerminalCommands([]);
+    }
+
     const output = engine(args);
 
     return setTerminalCommands([
       ...terminalCommands,
       output
-    ])
+    ]);
   };
 
   return (

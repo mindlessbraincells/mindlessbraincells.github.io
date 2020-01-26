@@ -22,7 +22,7 @@ export function TerminalWindowOutput(props) {
     border-style: none;
     color: #b7c5d2;
     outline: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Source Code Pro', monospace;
   `;
 
   const TerminalWindowOutputStyle = css`
@@ -32,7 +32,7 @@ export function TerminalWindowOutput(props) {
     border-style: none;
     color: #b7c5d2;
     outline: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Source Code Pro', monospace;
   `;
 
   const TerminalWindowOutputWrapperStyle = css`

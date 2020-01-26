@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { generateRandomHeadline } from "@Component/TerminalContext/generateRandomHeadline";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFlask } from "@fortawesome/free-solid-svg-icons";
 
 export const state = [
   {
@@ -8,7 +9,8 @@ export const state = [
     command: "greet",
     output: (
       <span>
-        {generateRandomHeadline()}< br/>
+        <FontAwesomeIcon icon={faFlask} /> Mindlessbraincells Labs (version 1.0.0)<br />
+        by Jacob Baring< br/>
         Type <span style={{color:"#d7566a"}}>help</span> to list all commands.
       </span>
     ),

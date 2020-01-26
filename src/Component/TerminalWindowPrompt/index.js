@@ -43,7 +43,7 @@ export function TerminalWindowPrompt(props) {
     border-style: none;
     color: #b7c5d2;
     outline: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Source Code Pro', monospace;
     caret-color: #8dd39e;
   `;
 

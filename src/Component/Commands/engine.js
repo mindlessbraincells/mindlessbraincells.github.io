@@ -1,4 +1,5 @@
 import About, { aliases as AboutAlias } from "@Component/Commands/about";
+import Blog, { aliases as BlogtAlias } from "@Component/Commands/blog";
 import Contact, { aliases as ContactAlias } from "@Component/Commands/contact";
 import Help, { aliases as HelpAlias } from "@Component/Commands/help";
 import Showcase, { aliases as ShowcaseAlias } from "@Component/Commands/showcase";
@@ -12,6 +13,7 @@ export function engine(argv) {
   };
 
   suicchi.addCase(AboutAlias, About);
+  suicchi.addCase(BlogtAlias, Blog);
   suicchi.addCase(ContactAlias, Contact);
   suicchi.addCase(HelpAlias, Help);
   suicchi.addCase(ShowcaseAlias, Showcase);

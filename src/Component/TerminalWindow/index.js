@@ -16,7 +16,8 @@ export function TerminalWindow(props) {
     background-color: rgb(23, 42, 69);
     border-radius: 0 0 5px 5px;
     height: 100%;
-    padding: 1em;
+    padding: 1.2em 1.5em 0 1.5em;
+    line-height: 1.4em;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
