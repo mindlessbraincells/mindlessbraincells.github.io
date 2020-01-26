@@ -1,10 +1,31 @@
-html, body {
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime&display=swap");
+
+* {
   margin: 0;
   padding: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  box-sizing: border-box;
+}
+
+html, body {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body, footer, .hero-body {
+  background-color: rgb(10, 25, 47) !important;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }

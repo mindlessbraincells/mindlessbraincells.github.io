@@ -1,10 +1,10 @@
 import { createBrowserHistory } from "history";
 import React from "react";
 import Helmet from "react-helmet";
+import { render } from "react-dom";
 import { Router, Route, Switch } from "react-router-dom";
 import { QueryParamProvider } from 'use-query-params';
-import { renderToDOM } from "@Component/renderToDOM";
-import { App } from "@Ui/app";
+import { App } from "@Ui/terminal";
 
 if (module.hot) {
   module.hot.accept();
@@ -16,7 +16,6 @@ function AttachApp () {
   return (
     <React.Fragment>
       <Helmet titleTemplate="%s | mindlessbraincells" defaultTitle= "Home | mindlessbraincells" />
-
       <Router history={history}>
         <QueryParamProvider ReactRouterRoute={Route}>
           <Switch>
@@ -28,4 +27,8 @@ function AttachApp () {
   )
 }
 
-renderToDOM("app", <AttachApp />);
+function mountApp(elementId, element) {
+  return render(element, document.getElementById(elementId));
+}
+
+mountApp("app", <AttachApp />);
