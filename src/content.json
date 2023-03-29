@@ -1,0 +1,34 @@
+{
+  "header": "Jacob Baring",
+  "subheader": "The guy who makes web applications for living, that is me!",
+  "contacts": [
+    {
+      "id": "aboutme",
+      "label": "About.me",
+      "icon": "https://s2.svgbox.net/social.svg?ic=about-dot-me",
+      "color": "fff",
+      "href": "https://about.me/yakovmeister"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "icon": "https://s2.svgbox.net/social.svg?ic=linkedin",
+      "color": "fff",
+      "href": "https://www.linkedin.com/in/yakovmeister"
+    },
+    {
+      "id": "github",
+      "label": "Github",
+      "icon": "https://s2.svgbox.net/social.svg?ic=github",
+      "color": "fff",
+      "href": "https://github.com/yakovmeister"
+    },
+    {
+      "id": "email",
+      "label": "Mail",
+      "icon": "https://s2.svgbox.net/octicons.svg?ic=mail-bold",
+      "color": "fff",
+      "href": "mailto:hireme@thefurious.dev"
+    }
+  ]
+}

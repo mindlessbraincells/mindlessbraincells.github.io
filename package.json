@@ -1,57 +1,44 @@
 {
-  "name": "mindlessbraincells.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev:watch": "parcel watch src/index.pug",
-    "dev:run": "parcel src/index.pug",
-    "rm:dist": "rimraf dist",
-    "deploy": "npm run rm:dist && npm run prod:build && gh-pages -d dist -b master",
-    "prod:build": "parcel build src/index.pug"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mindlessbraincells/mindlessbraincells.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mindlessbraincells/mindlessbraincells.github.io/issues"
-  },
-  "homepage": "https://github.com/mindlessbraincells/mindlessbraincells.github.io#readme",
-  "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@emotion/core": "^10.0.22",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "eslint": "^6.6.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "gh-pages": "^2.1.1",
-    "materialize-css": "^1.0.0-rc.2",
-    "parcel-bundler": "^1.12.4",
-    "pug": "^2.0.4",
-    "rimraf": "^3.0.0",
-    "sass": "^1.23.3"
-  },
+  "name": "mindlessbraincell.github.io",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.26",
-    "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-solid-svg-icons": "^5.12.0",
-    "@fortawesome/react-fontawesome": "^0.1.8",
-    "baffle": "^0.3.6",
-    "dayjs": "^1.8.19",
-    "history": "^4.10.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.1.2",
-    "suicchi": "^1.0.4",
-    "use-query-params": "^0.4.3"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.22",
+    "@types/react": "^18.0.31",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.60.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
