@@ -14,7 +14,7 @@ export const IconLink: FC<IconLinkProps> = ({
   title = 'icon'
 }) => {
   return (
-    <a href={href} title={title}>
+    <a href={href} title={title} target="_blank" rel="noreferrer">
       <img src={icon + '&color=' + color} width="25" height="25" alt={title} />
     </a>
   );

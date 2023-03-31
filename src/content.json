@@ -1,7 +1,7 @@
 {
   "header": "Jacob Baring",
-  "subheader": "The guy who makes web applications for living, that is me!",
-  "contacts": [
+  "subheader": "Jack of all trades (Full stack software engineer)",
+  "reach-me": [
     {
       "id": "aboutme",
       "label": "About.me",
@@ -28,7 +28,7 @@
       "label": "Mail",
       "icon": "https://s2.svgbox.net/octicons.svg?ic=mail-bold",
       "color": "fff",
-      "href": "mailto:hireme@thefurious.dev"
+      "href": "mailto:hireme@thefurious.dev?subject=We want you&body=We need your skills and you are hired!"
     }
   ]
 }

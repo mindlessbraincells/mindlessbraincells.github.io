@@ -1,11 +1,10 @@
-
-import './App.scss';
 import content from './content.json';
 import { TextContainerArea } from './components/TextContainerArea';
 import { IconLinkList } from './components/IconLinkList';
+import './App.scss';
 
 function App() {
-  if (!content.contacts.length) {
+  if (!content['reach-me'].length) {
     return (
       <div className="loader">
         <img
@@ -24,7 +23,7 @@ function App() {
         header={content.header}
         subheader={content.subheader}
       />
-      <IconLinkList data={content.contacts} />
+      <IconLinkList data={content['reach-me']} />
     </>
   );
 }

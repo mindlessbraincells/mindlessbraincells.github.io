@@ -17,7 +17,7 @@ export const IconLinkList: FC<IconLinkListProps> = ({ data }) => {
   return (
     <div className="icons-container">
       {data.map((item) => (
-        <div className="icon" key={item.id}>
+        <div className="icon icon-anim" key={item.id}>
           <IconLink
             href={item.href}
             color={item.color}
