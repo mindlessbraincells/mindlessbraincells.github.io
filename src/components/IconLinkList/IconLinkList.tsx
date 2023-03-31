@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Box from '@mui/system/Box';
 import { IconLink } from '../IconLink';
 
 interface Data {
@@ -15,17 +16,19 @@ export interface IconLinkListProps {
 
 export const IconLinkList: FC<IconLinkListProps> = ({ data }) => {
   return (
-    <div className="icons-container">
+    <Box display="flex" flexDirection="row" justifyContent="flex-start">
       {data.map((item) => (
-        <div className="icon icon-anim" key={item.id}>
-          <IconLink
-            href={item.href}
-            color={item.color}
-            icon={item.icon}
-            title={item.label}
-          />
-        </div>
+        <Box pr={2}>
+          <div className="icon-anim" key={item.id}>
+            <IconLink
+              href={item.href}
+              color={item.color}
+              icon={item.icon}
+              title={item.label}
+            />
+          </div>
+        </Box>
       ))}
-    </div>
+    </Box>
   );
 };

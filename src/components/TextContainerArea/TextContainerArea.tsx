@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Box from '@mui/system/Box';
 
 export interface TextContainerAreaProps {
   header: string;
@@ -10,13 +11,13 @@ export const TextContainerArea: FC<TextContainerAreaProps> = ({
   subheader
 }) => {
   return (
-    <div className="text-container">
+    <Box mb={2}>
       <h1 className="header">
         {header}
       </h1>
       <h2 className="subheader">
         {subheader}
       </h2>
-    </div>
+    </Box>
   );
 };
